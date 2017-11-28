@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- linha binario -->
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25sp"
+                android:text="@string/binario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/radBinario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtBinario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="4"/>
+        </TableRow>
+
+        <!-- linha octal -->
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25sp"
+                android:text="@string/octal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/radOctal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtOctal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="4"/>
+        </TableRow>
+
+        <!-- linha decimal -->
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25sp"
+                android:text="@string/decimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/radDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtDecimal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_weight="4"/>
+        </TableRow>
+
+        <!-- linha hexadecimal -->
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25sp"
+                android:text="@string/hexadecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/radHexadecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtHexadecimal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+        </TableRow>
+
+        <!-- botao para iniciar a conversao -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:text="@string/calcular"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+</LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

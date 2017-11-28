@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversor de Base</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_sobre">Sobre</string>
+
+    <string name="binario">Binario</string>
+    <string name="octal">Octal</string>
+    <string name="decimal">Decimal</string>
+    <string name="hexadecimal">Hexa</string>
+    <string name="x">Base X</string>
+    <string name="y">Base Y</string>
+    <string name="calcular">CALCULAR</string>
+</resources>
